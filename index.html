@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Online image Filter</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-info ">
+        <div class="container">
+            <a href="#" class="navbar-brand ">Image Filter</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 m-auto ">
+                <div class="custom-file mb-3 ">
+                    <input type="file" class="custom-file-input" id="upload-file">
+                    <label for="upload-file" class="custom-file-label">Choose an Image</label>
+                </div>
+                <canvas id="canvas"></canvas>
+                <h4 class="text-center my-4">Filters</h4>
+                <div class="row text-center my-4">
+                    <div class="col-md-3">
+                        <div class="btn-group btn-group-sm">
+                            <button class="filter-btn brightness-remove btn btn-info">-</button>
+                            <button class="btn btn-secondary btn-disabled" disabled>Brightness</button>
+                            <button class="filter-btn brightness-add btn btn-info">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="btn-group btn-group-sm">
+                            <button class="filter-btn contrast-remove btn btn-info">-</button>
+                            <button class="btn btn-secondary btn-disabled" disabled>Contrast</button>
+                            <button class="filter-btn contrast-add btn btn-info">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="btn-group btn-group-sm">
+                            <button class="filter-btn saturation-remove btn btn-info">-</button>
+                            <button class="btn btn-secondary btn-disabled" disabled>Saturation</button>
+                            <button class="filter-btn saturation-add btn btn-info">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="btn-group btn-group-sm">
+                            <button class="filter-btn vibrance-remove btn btn-info">-</button>
+                            <button class="btn btn-secondary btn-disabled" disabled>Vibrance</button>
+                            <button class="filter-btn vibrance-add btn btn-info">+</button>
+                        </div>
+                    </div>
+                </div>
+                <!--end of row -->
+                <h4 class="text-center my-3">Effects</h4>
+                <div class="row mb-3">
+
+                    <div class="col-md-3">
+                        <button class="filter-btn vintage-add btn btn-dark btn-block">Vintage</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn lomo-add btn btn-dark btn-block">Lomo</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn clarity-add btn btn-dark btn-block">Clarity</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn sincity-add btn btn-dark btn-block">Sincity</button>
+                    </div>
+                </div>
+                <!--endofrow -->
+                <div class="row mb-3">
+
+                    <div class="col-md-3">
+                        <button class="filter-btn crossprocess-add btn btn-dark btn-block">Cross Process</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn pinhole-add btn btn-dark btn-block">Pinhole</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn nostalgia-add btn btn-dark btn-block">Nostaligia</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="filter-btn her majesty-add btn btn-dark btn-block">Her Majesty</button>
+                    </div>
+                </div>
+                <!--endofrow -->
+                <div class="row my-5">
+                    <div class="col-md-6">
+                        <button id="download-btn" class="btn btn-primary btn-block">Download</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button id="revert-btn" class="btn btn-danger btn-block">Remove filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
